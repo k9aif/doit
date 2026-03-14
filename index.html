@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
@@ -47,33 +48,14 @@ h2{
 }
 
 .architecture{
+    text-align:center;
     margin-top:25px;
 }
 
-.architecture-viewer{
-    width:100%;
-    height:700px;
-    overflow:auto;
+.architecture img{
+    max-width:100%;
+    border-radius:6px;
     border:1px solid #ddd;
-    border-radius:6px;
-    background:#fff;
-    padding:12px;
-    box-sizing:border-box;
-}
-
-.architecture-viewer img{
-    display:block;
-    max-width:none;
-    width:auto;
-    height:auto;
-    border-radius:6px;
-}
-
-.architecture-note{
-    text-align:center;
-    margin-top:12px;
-    color:#555;
-    font-size:15px;
 }
 
 .links ul{
@@ -97,113 +79,114 @@ footer{
     color:#777;
     font-size:14px;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <img src="images/k9aif-logo-tm.png" alt="K9-AIF Logo">
 
-    <h1>K9-AIF Agentic Integration Framework</h1>
+<img src="images/k9aif-logo-tm.png" alt="K9-AIF Logo">
 
-    <p>Architecture framework for governed enterprise multi-agent AI systems</p>
+<h1>K9-AIF Agentic Integration Framework</h1>
+
+<p>Architecture framework for governed enterprise multi-agent AI systems</p>
+
 </header>
 
 <div class="container">
 
-    <h2>Overview</h2>
+<h2>Overview</h2>
 
-    <p>
-    K9-AIF is an architecture framework for building modular, governed
-    multi-agent AI systems. The framework applies enterprise architecture
-    principles to agentic AI, enabling scalable and maintainable AI
-    applications built using layered architecture and composable components.
-    </p>
+<p>
+K9-AIF is an architecture framework for building modular, governed
+multi-agent AI systems. The framework applies enterprise architecture
+principles to agentic AI, enabling scalable and maintainable AI
+applications built using layered architecture and composable components.
+</p>
 
-    <h2>Why K9-AIF</h2>
+<h2>Why K9-AIF</h2>
 
-    <p>
-    Many agent frameworks focus primarily on orchestrating LLM calls or
-    managing agent execution workflows. K9-AIF approaches the problem from
-    an architecture perspective, introducing structural patterns that make
-    multi-agent AI systems easier to govern, extend, and integrate within
-    enterprise environments.
-    </p>
+<p>
+Many agent frameworks focus primarily on orchestrating LLM calls or 
+managing agent execution workflows. K9-AIF approaches the problem from 
+an architecture perspective, introducing structural patterns that make 
+multi-agent AI systems easier to govern, extend, and integrate within 
+enterprise environments.
+</p>
 
-    <ul>
-        <li>Architecture-first framework for AI systems</li>
-        <li>Clear separation between Architecture Building Blocks (ABB) and Solution Building Blocks (SBB)</li>
-        <li>Explicit orchestration hierarchy: Router → Orchestrator → Squads → Agents</li>
-        <li>Configuration-driven system composition</li>
-        <li>Enterprise architecture alignment with TOGAF principles</li>
-    </ul>
+<ul>
+<li>Architecture-first framework for AI systems</li>
+<li>Clear separation between Architecture Building Blocks (ABB) and Solution Building Blocks (SBB)</li>
+<li>Explicit orchestration hierarchy: Router → Orchestrator → Squads → Agents</li>
+<li>Configuration-driven system composition</li>
+<li>Enterprise architecture alignment with TOGAF principles</li>
+</ul>
 
-    <p>
-    For a detailed comparison with other agent frameworks such as CrewAI,
-    LangGraph, and AgentStack, see the framework repository on GitHub.
-    </p>
+<p>
+For a detailed comparison with other agent frameworks such as CrewAI, 
+LangGraph, and AgentStack, see the framework repository on GitHub.
+</p>
 
-    <ul>
-        <li>Architecture-first AI framework</li>
-        <li>ABB / SBB separation (TOGAF-inspired)</li>
-        <li>Layered architecture for agentic systems</li>
-        <li>Provider-independent inference and model routing layer</li>
-        <li>Governance, monitoring, and extensibility</li>
-    </ul>
+<ul>
+<li>Architecture-first AI framework</li>
+<li>ABB / SBB separation (TOGAF-inspired)</li>
+<li>Layered architecture for agentic systems</li>
+<li>Provider-independent inference and model routing layer</li>
+<li>Governance, monitoring, and extensibility</li>
+</ul>
 
-    <h2>Architecture</h2>
+<h2>Architecture</h2>
 
-    <div class="architecture">
-        <div class="architecture-viewer">
-            <img src="images/k9-aif-architecture.png" alt="K9-AIF Architecture Diagram">
-        </div>
-        <p class="architecture-note">
-            <em>Scroll inside the diagram to explore the full K9-AIF layered architecture.</em>
-        </p>
-    </div>
+<div class="architecture">
+<img src="images/k9-aif-architecture.png" alt="K9-AIF Architecture Diagram">
+<p><em>K9-AIF layered architecture</em></p>
+</div>
 
-    <h2>Resources</h2>
+<h2>Resources</h2>
 
-    <div class="links">
-        <ul>
-            <li>
-                <a href="https://github.com/k9aif/k9-aif-framework" target="_blank">
-                K9-AIF Framework (GitHub)
-                </a>
-            </li>
+<div class="links">
+<ul>
 
-            <li>
-                <a href="https://github.com/k9aif/k9-aif-framework/tree/main/blog" target="_blank">
-                K9-AIF Architecture Blog
-                </a>
-            </li>
+<li>
+<a href="https://github.com/k9aif/k9-aif-framework" target="_blank">
+K9-AIF Framework (GitHub)
+</a>
+</li>
 
-            <li>
-                <a href="https://github.com/k9aif/k9-aif-framework/tree/main/examples/acme_health_insurance" target="_blank">
-                ACME Health Insurance Claims Demo
-                </a>
-            </li>
+<li>
+<a href="https://github.com/k9aif/k9-aif-framework/tree/main/blog" target="_blank">
+K9-AIF Architecture Blog
+</a>
+</li>
 
-            <li>
-                <a href="https://doi.org/10.36227/techrxiv.177274107.74861825/v1" target="_blank">
-                Research Paper — K9-AIF: A Governed, Modular Framework for Agentic AI Applications
-                </a>
-            </li>
-        </ul>
-    </div>
+<li>
+<a href="https://github.com/k9aif/k9-aif-framework/tree/main/examples/acme_health_insurance" target="_blank">
+ACME Health Insurance Claims Demo
+</a>
+</li>
 
-    <h2>Author</h2>
+<li>
+<a href="https://doi.org/10.36227/techrxiv.177274107.74861825/v1" target="_blank">
+Research Paper — K9-AIF: A Governed, Modular Framework for Agentic AI Applications
+</a>
+</li>
 
-    <p>
-    Ravi Natarajan<br>
-    AI Systems Architect — Agentic AI • Multi-Agent Systems • Enterprise Architecture
-    </p>
+</ul>
+</div>
+
+<h2>Author</h2>
+
+<p>
+Ravi Natarajan<br>
+AI Systems Architect — Agentic AI • Multi-Agent Systems • Enterprise Architecture
+</p>
 
 </div>
 
 <footer>
-    © K9-AIF Framework • https://k9aif.com
+© K9-AIF Framework • https://k9aif.com
 </footer>
 
 </body>
